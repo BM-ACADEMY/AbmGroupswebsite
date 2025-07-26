@@ -8,210 +8,49 @@ import lgZoom from "lightgallery/plugins/zoom";
 import lgThumbnail from "lightgallery/plugins/thumbnail";
 import ReactPaginate from "react-paginate";
 import { motion } from "framer-motion";
-import galleryImages from "../assets/gallery/galleryImages"; // Adjust path as needed
+import galleryImages from "../assets/gallery/galleryImages";
 
 const categories = [
   "All",
-  "BM Academy",
-  "Dada’s Kitchen",
-  "Real Estate",
-  "Hajj & Umrah",
   "Foundation Programs",
-  // "TravellersNeed",
+  "BM Academy",
+  "Real Estate",
 ];
 
 const staticImages = [
-  // --- BM Academy ---
-  {
-    id: 1,
-    url: galleryImages.img25,
-    thumbnailUrl: galleryImages.img25,
-    category: "BM Academy",
-  },
-  {
-    id: 2,
-    url: galleryImages.img26,
-    thumbnailUrl: galleryImages.img26,
-    category: "BM Academy",
-  },
-  {
-    id: 3,
-    url: galleryImages.img27,
-    thumbnailUrl: galleryImages.img27,
-    category: "BM Academy",
-  },
-  {
-    id: 4,
-    url: galleryImages.img30,
-    thumbnailUrl: galleryImages.img30,
-    category: "BM Academy",
-  },
-  {
-    id: 5,
-    url: galleryImages.img28,
-    thumbnailUrl: galleryImages.img28,
-    category: "BM Academy",
-  },
+  // Foundation Programs
+  { url: galleryImages.img30, category: "Foundation Programs" },
+  { url: galleryImages.img31, category: "Foundation Programs" },
+  { url: galleryImages.img32, category: "Foundation Programs" },
+  { url: galleryImages.img33, category: "Foundation Programs" },
+  { url: galleryImages.img34, category: "Foundation Programs" },
+  { url: galleryImages.img35, category: "Foundation Programs" },
+  { url: galleryImages.img36, category: "Foundation Programs" },
+  { url: galleryImages.img37, category: "Foundation Programs" },
+  { url: galleryImages.img38, category: "Foundation Programs" },
+  { url: galleryImages.img39, category: "Foundation Programs" },
+  { url: galleryImages.img41, category: "Foundation Programs" },
+  { url: galleryImages.img42, category: "Foundation Programs" },
+  { url: galleryImages.img43, category: "Foundation Programs" },
+  { url: galleryImages.img44, category: "Foundation Programs" },
+  { url: galleryImages.img1, category: "Foundation Programs" },
+  { url: galleryImages.img2, category: "Foundation Programs" },
+  { url: galleryImages.img3, category: "Foundation Programs" },
+  { url: galleryImages.img4, category: "Foundation Programs" },
+  { url: galleryImages.img5, category: "Foundation Programs" },
+  { url: galleryImages.img21, category: "Foundation Programs" },
+  { url: galleryImages.img20, category: "Foundation Programs" },
 
-  {
-    id: 6,
-    url: galleryImages.img7,
-    thumbnailUrl: galleryImages.img7,
-    category: "BM Academy",
-  },
-  // --- Dada’s Kitchen ---
-  {
-    id: 7,
-    url: galleryImages.img8,
-    thumbnailUrl: galleryImages.img8,
-    category: "Dada’s Kitchen",
-  },
-  {
-    id: 8,
-    url: galleryImages.img9,
-    thumbnailUrl: galleryImages.img9,
-    category: "Dada’s Kitchen",
-  },
-  {
-    id: 9,
-    url: galleryImages.img10,
-    thumbnailUrl: galleryImages.img10,
-    category: "Dada’s Kitchen",
-  },
-  {
-    id: 10,
-    url: galleryImages.img11,
-    thumbnailUrl: galleryImages.img11,
-    category: "Dada’s Kitchen",
-  },
+  // BM Academy
+  { url: galleryImages.img25, category: "BM Academy" },
+  { url: galleryImages.img26, category: "BM Academy" },
+  { url: galleryImages.img27, category: "BM Academy" },
+  { url: galleryImages.img28, category: "BM Academy" },
+  { url: galleryImages.img7, category: "BM Academy" },
 
-  {
-    id: 11,
-    url: galleryImages.img12,
-    thumbnailUrl: galleryImages.img12,
-    category: "Dada’s Kitchen",
-  },
-  {
-    id: 12,
-    url: galleryImages.img13,
-    thumbnailUrl: galleryImages.img13,
-    category: "Dada’s Kitchen",
-  },
-  // --- Hajj & Umrah ---
-  {
-    id: 13,
-    url: galleryImages.img15,
-    thumbnailUrl: galleryImages.img15,
-    category: "Hajj & Umrah",
-  },
-  {
-    id: 14,
-    url: galleryImages.img16,
-    thumbnailUrl: galleryImages.img16,
-    category: "Hajj & Umrah",
-  },
-  {
-    id: 15,
-    url: galleryImages.img17,
-    thumbnailUrl: galleryImages.img17,
-    category: "Hajj & Umrah",
-  },
-  {
-    id: 16,
-    url: galleryImages.img18,
-    thumbnailUrl: galleryImages.img18,
-    category: "Hajj & Umrah",
-  },
-  {
-    id: 17,
-    url: galleryImages.img19,
-    thumbnailUrl: galleryImages.img19,
-    category: "Hajj & Umrah",
-  },
-
-  // --- TravellersNeed ---
-  // {
-  //   id: 18,
-  //   url: galleryImages.img16,
-  //   thumbnailUrl: galleryImages.img16,
-  //   category: "TravellersNeed",
-  // },
-  // {
-  //   id: 19,
-  //   url: galleryImages.img22,
-  //   thumbnailUrl: galleryImages.img22,
-  //   category: "TravellersNeed",
-  // },
-  // {
-  //   id: 20,
-  //   url: galleryImages.img28,
-  //   thumbnailUrl: galleryImages.img28,
-  //   category: "TravellersNeed",
-  // },
-
-  // --- Real Estate ---
-  {
-    id: 21,
-    url: galleryImages.img14,
-    thumbnailUrl: galleryImages.img14,
-    category: "Real Estate",
-  },
-  {
-    id: 22,
-    url: galleryImages.img29,
-    thumbnailUrl: galleryImages.img29,
-    category: "Real Estate",
-  },
-
-  // --- Foundation Programs ---
-  {
-    id: 23,
-    url: galleryImages.img1,
-    thumbnailUrl: galleryImages.img1,
-    category: "Foundation Programs",
-  },
-  {
-    id: 24,
-    url: galleryImages.img2,
-    thumbnailUrl: galleryImages.img2,
-    category: "Foundation Programs",
-  },
-  {
-    id: 25,
-    url: galleryImages.img3,
-    thumbnailUrl: galleryImages.img3,
-    category: "Foundation Programs",
-  },
-  {
-    id: 26,
-    url: galleryImages.img4,
-    thumbnailUrl: galleryImages.img4,
-    category: "Foundation Programs",
-  },
-  {
-    id: 27,
-    url: galleryImages.img5,
-    thumbnailUrl: galleryImages.img5,
-    category: "Foundation Programs",
-  },
-  {
-    id: 28,
-    url: galleryImages.img17,
-    thumbnailUrl: galleryImages.img17,
-    category: "Foundation Programs",
-  },
-  {
-    id: 29,
-    url: galleryImages.img20,
-    thumbnailUrl: galleryImages.img20,
-    category: "Foundation Programs",
-  },
-  {
-    id: 30,
-    url: galleryImages.img21,
-    thumbnailUrl: galleryImages.img21,
-    category: "Foundation Programs",
-  },
+  // Real Estate
+  { url: galleryImages.img14, category: "Real Estate" },
+  { url: galleryImages.img29, category: "Real Estate" },
 ];
 
 const Gallery = () => {
@@ -233,26 +72,30 @@ const Gallery = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-black to-[#000000e1] py-8 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-gradient-to-b from-black to-[#0a0a0a] py-12 px-4 sm:px-6 lg:px-8">
       <div className="container mx-auto max-w-7xl">
+        {/* Header */}
         <motion.div
-          initial={{ y: -20 }}
-          animate={{ y: 0 }}
-          className="text-center mb-16 px-4 md:px-8"
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className="text-center mb-14"
         >
-          <h1 className="text-3xl md:text-5xl font-extrabold text-white leading-tight">
-            Our <span className="text-[#facc15]">Clients</span>
+          <h1 className="text-4xl md:text-5xl font-bold text-white tracking-tight">
+            Gallery <span className="text-yellow-400">Vault</span>
           </h1>
+          <p className="mt-2 text-gray-400 text-sm md:text-base">
+            Explore our work across different domains
+          </p>
         </motion.div>
 
-        <div className="flex justify-center items-center mb-8">
-          <div className="relative">
-            <Filter
-              className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-500"
-              size={18}
-            />
+        {/* Filter */}
+        <div className="flex justify-center items-center mb-10">
+          <div className="relative w-[250px]">
+            <Filter className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-500" size={18} />
             <select
-              className="pl-10 pr-4 py-2 border rounded-md bg-white text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-md bg-white text-gray-800 focus:outline-none focus:ring-2 focus:ring-yellow-400 shadow-sm"
               value={filter}
               onChange={(e) => {
                 setFilter(e.target.value);
@@ -268,50 +111,50 @@ const Gallery = () => {
           </div>
         </div>
 
+        {/* Gallery */}
         <LightGallery
-          elementClassNames="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 justify-items-center"
+          elementClassNames="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
           plugins={[lgZoom, lgThumbnail]}
         >
-          {currentItems.map((item) => (
+          {currentItems.map((item, index) => (
             <a
-              key={item.id}
+              key={index}
               href={item.url}
-              className="relative rounded-lg overflow-hidden shadow-lg w-full max-w-[350px] group"
-              data-sub-html={`<h4>${item.description}</h4><p>${item.category}</p>`}
+              className="group relative overflow-hidden rounded-xl shadow-lg border border-gray-700 hover:shadow-yellow-500/20 transition-all duration-300"
+              data-sub-html={`<h4>${item.category}</h4>`}
             >
               <img
-                src={item.thumbnailUrl}
-                alt={item.description}
-                className="w-full h-48 sm:h-56 object-cover transition-transform duration-300 group-hover:scale-105"
+                src={item.url}
+                alt={item.category}
+                className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-500"
               />
-              <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100">
-                <p className="text-white text-sm font-medium text-center">
-                  ({item.category})
+              <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 flex items-center justify-center transition duration-300">
+                <p className="text-white text-sm md:text-base font-medium opacity-0 group-hover:opacity-100">
+                  {item.category}
                 </p>
               </div>
             </a>
           ))}
         </LightGallery>
 
+        {/* Pagination */}
         {pageCount > 1 && (
-          <div className="mt-8 flex justify-center items-center">
+          <div className="mt-12 flex justify-center items-center">
             <ReactPaginate
               previousLabel={"<"}
               nextLabel={">"}
               pageCount={pageCount}
               onPageChange={handlePageChange}
-              containerClassName={"flex space-x-2 items-center"}
+              containerClassName={"flex gap-2"}
               pageClassName={
-                "w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center border border-gray-300 rounded-full cursor-pointer text-white hover:bg-yellow-500 hover:text-black transition"
+                "w-10 h-10 flex items-center justify-center border border-gray-500 rounded-full text-white hover:bg-yellow-400 hover:text-black transition"
               }
-              activeClassName={
-                "bg-yellow-400 text-black font-bold border-yellow-400"
-              }
+              activeClassName={"bg-yellow-400 text-black font-bold"}
               previousClassName={
-                "w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center border border-gray-300 rounded-full cursor-pointer text-white hover:bg-yellow-500 hover:text-black transition"
+                "w-10 h-10 flex items-center justify-center border border-gray-500 rounded-full text-white hover:bg-yellow-400 hover:text-black transition"
               }
               nextClassName={
-                "w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center border border-gray-300 rounded-full cursor-pointer text-white hover:bg-yellow-500 hover:text-black transition"
+                "w-10 h-10 flex items-center justify-center border border-gray-500 rounded-full text-white hover:bg-yellow-400 hover:text-black transition"
               }
               disabledClassName={"opacity-50 cursor-not-allowed"}
             />

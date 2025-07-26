@@ -8,7 +8,7 @@ const Footer = () => {
 
   return (
     <footer
-      className="px-6 md:px-16 lg:px-24 xl:px-32 bg-gradient-to-b from-black to-[#000000e1]"
+      className="px-6 md:px-16 lg:px-24 xl:px-32 bg-gradient-to-t from-black to-[#000000e1]"
       id="contact"
     >
       <div className="flex flex-col md:flex-row items-start justify-between gap-6 md:gap-10 py-10 border-b border-gray-500/30 text-gray-500">
@@ -92,11 +92,11 @@ const Footer = () => {
       <p className="py-4 text-center text-sm md:text-base text-gray-500/80">
         © <span id="year"></span>{" "}
         <a
-          href="https://thebmacademy.com/"
+          href="https://bmtechx.in/"
           target="_blank"
           className="hover:underline text-yellow-400"
         >
-          BM Academy
+           BMTechx.in
         </a>
         . All Rights Reserved.
       </p>

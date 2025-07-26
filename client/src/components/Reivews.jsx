@@ -106,7 +106,7 @@ const Reviews = () => {
   };
 
   return (
-    <section className="py-16 bg-gradient-to-t from-black to-[#000000e1]">
+    <section className="py-16 bg-gradient-to-b from-black to-[#000000e1]">
       <div className="container mx-auto px-4">
         <motion.div
             initial={{ y: -20 }}
