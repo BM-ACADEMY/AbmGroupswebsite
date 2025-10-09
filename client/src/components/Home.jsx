@@ -12,6 +12,8 @@ import Dada from "../assets/images/DADAS.png";
 import Haramain from "../assets/images/HARAMAIN.png";
 import Foundation from "../assets/images/foundation.png";
 import Travel from "../assets/images/travell.png";
+import CoreTalent from "../assets/images/core.png";
+import Edu from "../assets/images/edu.png";
 
 import Men1 from '../assets/images/per1.jpg';
 import Men2 from '../assets/images/per2.png';
@@ -54,6 +56,8 @@ const HeroSection = () => {
       key="6"
     />,
     <img src={Travel} alt="travel" className="h-32 w-auto mx-12" key="7" />,
+    <img src={CoreTalent} alt="travel" className="h-20 w-auto mx-12" key="7" />,
+    <img src={Edu} alt="travel" className="h-32 w-auto mx-12" key="7" />,
   ];
 
   return (
@@ -97,6 +101,14 @@ const HeroSection = () => {
           >
             Achievements
           </a>
+
+          <Link
+            to="/ceo.html"
+            className="hover:text-gray-300"
+            onClick={handleNavLinkClick}
+          >
+            CEO
+          </Link>
           <a
             href="#moments"
             className="hover:text-gray-300"
@@ -111,13 +123,7 @@ const HeroSection = () => {
           >
             Brands
           </a>
-          {/* <Link
-            to="/ceo"
-            className="hover:text-gray-300"
-            onClick={handleNavLinkClick}
-          >
-            CEO
-          </Link> */}
+          
           
           <button
             onClick={toggleMenu}

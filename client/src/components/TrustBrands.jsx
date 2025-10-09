@@ -68,6 +68,7 @@ const TrustBrands = () => {
             <img src={Bmtechx} alt="BM TECHx" className="max-h-24 object-contain mx-auto" />
           </a>
         </div>
+        
         <div className="hover:bg-slate-800 flex items-center justify-center h-20 w-48 sm:w-64 sm:h-24 border border-slate-600 border-t-0 border-x-0">
           
         </div>
@@ -110,6 +111,8 @@ const TrustBrands = () => {
             <img src={Haramain} alt="Haramain" className="max-h-24 object-contain mx-auto" />
           </a>
         </div>
+
+        
         <div className="hover:bg-slate-800 h-20 w-48 sm:w-64 sm:h-24 border border-slate-600 hidden lg:block lg:border-r-0 lg:border-y-0">
           
         </div>

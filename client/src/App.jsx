@@ -33,7 +33,7 @@ const App = () => {
           }
         />
         {/* CEO Route */}
-        <Route path="/ceo" element={<Main />} />
+        <Route path="/ceo.html" element={<Main />} />
       </Routes>
       <WhatsappFloatButton />
     </Router>

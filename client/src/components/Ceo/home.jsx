@@ -7,6 +7,8 @@ import Bmacademy from "../../assets/images/BM_ACADEMY.png";
 import Bmtech from "../../assets/images/BM_TECHX.png";
 import Dada from "../../assets/images/DADAS.png";
 import Travel from "../../assets/images/travell.png";
+import CoreTalent from "../../assets/images/core.png";
+import Edu from "../../assets/images/edu.png";
 import EnquiryModal from "../EnquiryModal"; // Adjust path if needed
 
 const Homeceo = () => {
@@ -27,6 +29,8 @@ const Homeceo = () => {
     <img src={Dada} alt="Dada" className="h-32 w-auto mx-12" key="3" />,
 
     <img src={Travel} alt="Travel" className="h-32 w-auto mx-12" key="5" />,
+       <img src={CoreTalent} alt="travel" className="h-20 w-auto mx-12" key="7" />,
+        <img src={Edu} alt="travel" className="h-32 w-auto mx-12" key="7" />,
   ];
 
   return (

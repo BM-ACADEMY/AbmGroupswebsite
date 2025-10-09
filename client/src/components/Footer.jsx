@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { Instagram, Twitter, Facebook, Youtube } from "lucide-react";
+import { Link } from "react-router-dom"; // ✅ Added
 
 const Footer = () => {
   useEffect(() => {
@@ -63,7 +64,7 @@ const Footer = () => {
                   Brands
                 </a>
               </li>
-              {/* <li><Link to="/ceo" className="hover:underline transition">CEO</Link></li> */}
+              <li><Link to="/ceo.html" className="hover:underline transition">CEO</Link></li>
               <li>
                 <a href="#contact" className="hover:underline transition">
                   Contact

@@ -31,8 +31,15 @@ const staticImages = [
   { url: galleryImages.img39, category: "Foundation Programs" },
   { url: galleryImages.img41, category: "Foundation Programs" },
   { url: galleryImages.img42, category: "Foundation Programs" },
-  { url: galleryImages.img43, category: "Foundation Programs" },
   { url: galleryImages.img44, category: "Foundation Programs" },
+  { url: galleryImages.img45, category: "Foundation Programs" },
+  { url: galleryImages.img46, category: "Foundation Programs" },
+  { url: galleryImages.img47, category: "Foundation Programs" },
+  { url: galleryImages.img48, category: "Foundation Programs" },
+
+
+
+
   { url: galleryImages.img1, category: "Foundation Programs" },
   { url: galleryImages.img2, category: "Foundation Programs" },
   { url: galleryImages.img3, category: "Foundation Programs" },
