@@ -18,7 +18,14 @@ const categories = [
 ];
 
 const staticImages = [
-  // Foundation Programs
+  // Same image data as before
+  { url: galleryImages.img54, category: "Foundation Programs" },
+  { url: galleryImages.img49, category: "Foundation Programs" },
+  { url: galleryImages.img50, category: "Foundation Programs" },
+  { url: galleryImages.img51, category: "Foundation Programs" },
+  { url: galleryImages.img52, category: "Foundation Programs" },
+  { url: galleryImages.img53, category: "Foundation Programs" },
+  { url: galleryImages.img55, category: "Foundation Programs" },
   { url: galleryImages.img30, category: "Foundation Programs" },
   { url: galleryImages.img31, category: "Foundation Programs" },
   { url: galleryImages.img32, category: "Foundation Programs" },
@@ -36,10 +43,13 @@ const staticImages = [
   { url: galleryImages.img46, category: "Foundation Programs" },
   { url: galleryImages.img47, category: "Foundation Programs" },
   { url: galleryImages.img48, category: "Foundation Programs" },
-
-
-
-
+  { url: galleryImages.img49, category: "Foundation Programs" },
+  { url: galleryImages.img50, category: "Foundation Programs" },
+  { url: galleryImages.img51, category: "Foundation Programs" },
+  { url: galleryImages.img52, category: "Foundation Programs" },
+  { url: galleryImages.img53, category: "Foundation Programs" },
+  { url: galleryImages.img54, category: "Foundation Programs" },
+  { url: galleryImages.img55, category: "Foundation Programs" },
   { url: galleryImages.img1, category: "Foundation Programs" },
   { url: galleryImages.img2, category: "Foundation Programs" },
   { url: galleryImages.img3, category: "Foundation Programs" },
@@ -47,15 +57,11 @@ const staticImages = [
   { url: galleryImages.img5, category: "Foundation Programs" },
   { url: galleryImages.img21, category: "Foundation Programs" },
   { url: galleryImages.img20, category: "Foundation Programs" },
-
-  // BM Academy
   { url: galleryImages.img25, category: "BM Academy" },
   { url: galleryImages.img26, category: "BM Academy" },
   { url: galleryImages.img27, category: "BM Academy" },
   { url: galleryImages.img28, category: "BM Academy" },
   { url: galleryImages.img7, category: "BM Academy" },
-
-  // Real Estate
   { url: galleryImages.img14, category: "Real Estate" },
   { url: galleryImages.img29, category: "Real Estate" },
 ];
@@ -144,27 +150,30 @@ const Gallery = () => {
           ))}
         </LightGallery>
 
-        {/* Pagination */}
+        {/* Simplified Pagination */}
         {pageCount > 1 && (
-          <div className="mt-12 flex justify-center items-center">
-            <ReactPaginate
-              previousLabel={"<"}
-              nextLabel={">"}
-              pageCount={pageCount}
-              onPageChange={handlePageChange}
-              containerClassName={"flex gap-2"}
-              pageClassName={
-                "w-10 h-10 flex items-center justify-center border border-gray-500 rounded-full text-white hover:bg-yellow-400 hover:text-black transition"
-              }
-              activeClassName={"bg-yellow-400 text-black font-bold"}
-              previousClassName={
-                "w-10 h-10 flex items-center justify-center border border-gray-500 rounded-full text-white hover:bg-yellow-400 hover:text-black transition"
-              }
-              nextClassName={
-                "w-10 h-10 flex items-center justify-center border border-gray-500 rounded-full text-white hover:bg-yellow-400 hover:text-black transition"
-              }
-              disabledClassName={"opacity-50 cursor-not-allowed"}
-            />
+          <div className="mt-12 flex justify-center items-center gap-4">
+            <button
+              onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 0))}
+              disabled={currentPage === 0}
+              className={`px-4 py-2 border border-gray-500 rounded-full text-white hover:bg-yellow-400 hover:text-black transition ${
+                currentPage === 0 ? "opacity-50 cursor-not-allowed" : ""
+              }`}
+            >
+              Prev
+            </button>
+            <span className="text-white">
+              Page {currentPage + 1} of {pageCount}
+            </span>
+            <button
+              onClick={() => setCurrentPage((prev) => Math.min(prev + 1, pageCount - 1))}
+              disabled={currentPage === pageCount - 1}
+              className={`px-4 py-2 border border-gray-500 rounded-full text-white hover:bg-yellow-400 hover:text-black transition ${
+                currentPage === pageCount - 1 ? "opacity-50 cursor-not-allowed" : ""
+              }`}
+            >
+              Next
+            </button>
           </div>
         )}
       </div>

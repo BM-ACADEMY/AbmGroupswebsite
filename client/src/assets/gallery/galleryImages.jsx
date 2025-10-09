@@ -31,6 +31,13 @@ import image45 from "./bmfoundation16.jpg";
 import image46 from "./bmfoundation17.jpg";
 import image47 from "./bmfoundation18.jpg";
 import image48 from "./bmfoundation19.jpg";
+import image49 from "./image31.png";
+import image50 from "./image32.png";
+import image51 from "./image33.png";
+import image52 from "./image34.png";
+import image53 from "./image35.png";
+import image54 from "./image36.png";
+import image55 from "./image37.png";
 
 const galleryImages = {
   img1: image1,
@@ -64,6 +71,13 @@ const galleryImages = {
   img46: image46,
   img47: image47,
   img48: image48,
+  img49: image49,
+  img50: image50,
+  img51: image51,
+  img52: image52,
+  img53: image53,
+  img54: image54,
+  img55: image55,
 };
 
 export default galleryImages;

@@ -12,6 +12,7 @@ import Foundation from "../assets/images/foundation.png";
 import Haramain from "../assets/images/HARAMAIN.png";
 import Dada from "../assets/images/DADAS.png";
 import Edu from '../assets/images/edu.png'
+import Coretalent from '../assets/images/core.png'
 
 // Updated TrustBrands Component with New Grid Styles
 const TrustBrands = () => {
@@ -28,7 +29,7 @@ const TrustBrands = () => {
         </h1>
       </motion.div>
 
-     <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 mt-16 w-max mx-auto">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 mt-16 w-max mx-auto">
         <div className="hover:bg-slate-800 h-20 w-48 sm:w-64 sm:h-24 border border-slate-600 border-t-0 border-x-0">
           <a
             href="https://www.instagram.com/al_amaanath?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
@@ -44,7 +45,7 @@ const TrustBrands = () => {
         <div className="hover:bg-slate-800 h-20 w-48 sm:w-64 sm:h-24 border border-slate-600 border-t-0 border-r-0">
         </div>
         <div className="hover:bg-slate-800 h-20 w-48 sm:w-64 sm:h-24 border border-slate-600 hidden md:block md:border-t-0 md:border-r-0">
-           <a
+          <a
             href="https://thebmacademy.com/"
             target="_blank"
             rel="noopener noreferrer"
@@ -55,10 +56,10 @@ const TrustBrands = () => {
           </a>
         </div>
         <div className="hover:bg-slate-800 h-20 w-48 sm:w-64 sm:h-24 border border-slate-600 hidden lg:block lg:border-t-0 lg:border-r-0">
-         
+
         </div>
         <div className="hover:bg-slate-800 h-20 w-48 sm:w-64 sm:h-24 border border-slate-600 hidden xl:block xl:border-t-0 xl:border-r-0">
-            <a
+          <a
             href="https://bmtechx.in/"
             target="_blank"
             rel="noopener noreferrer"
@@ -68,9 +69,9 @@ const TrustBrands = () => {
             <img src={Bmtechx} alt="BM TECHx" className="max-h-24 object-contain mx-auto" />
           </a>
         </div>
-        
+
         <div className="hover:bg-slate-800 flex items-center justify-center h-20 w-48 sm:w-64 sm:h-24 border border-slate-600 border-t-0 border-x-0">
-          
+
         </div>
         <div className="hover:bg-slate-800 flex items-center justify-center h-20 w-48 sm:w-64 sm:h-24 border border-slate-600 border-t-0 border-r-0">
           <a
@@ -84,7 +85,7 @@ const TrustBrands = () => {
           </a>
         </div>
         <div className="hover:bg-slate-800 flex items-center justify-center h-20 w-48 sm:w-64 sm:h-24 border border-slate-600 border-t-0 border-x-0 md:border-l">
-          
+
         </div>
         <div className="hover:bg-slate-800 flex items-center justify-center h-20 w-48 sm:w-64 sm:h-24 border border-slate-600 border-t-0 border-r-0 md:border-l-0 md:border-b-0 lg:border-l lg:border-b">
           <a
@@ -98,7 +99,7 @@ const TrustBrands = () => {
           </a>
         </div>
         <div className="hover:bg-slate-800 flex items-center justify-center h-20 w-48 sm:w-64 sm:h-24 border border-slate-600 border-y-0 border-x-0 md:border-l lg:border-l-0 xl:border-l xl:border-b">
-          
+
         </div>
         <div className="hover:bg-slate-800 h-20 w-48 sm:w-64 sm:h-24 border border-slate-600 hidden lg:block lg:border-r-0 lg:border-y-0 xl:border-l-0">
           <a
@@ -112,9 +113,9 @@ const TrustBrands = () => {
           </a>
         </div>
 
-        
+
         <div className="hover:bg-slate-800 h-20 w-48 sm:w-64 sm:h-24 border border-slate-600 hidden lg:block lg:border-r-0 lg:border-y-0">
-          
+
         </div>
         <div className="hover:bg-slate-800 h-20 w-48 sm:w-64 sm:h-24 border border-slate-600 hidden xl:block xl:border-r-0 xl:border-y-0">
           <a
@@ -128,7 +129,7 @@ const TrustBrands = () => {
           </a>
         </div>
         <div className="hover:bg-slate-800 h-20 w-48 sm:w-64 sm:h-24 border border-slate-600 hidden xl:block xl:border-r-0 xl:border-y-0">
-          
+
         </div>
         <div className="hover:bg-slate-800 h-20 w-48 sm:w-64 sm:h-24 border border-slate-600 border-y-0 border-r-0 lg:border-b-0">
           <a
@@ -141,13 +142,64 @@ const TrustBrands = () => {
             <img src={Edu} alt="edu" className="max-h-24 object-contain mx-auto" />
           </a>
         </div>
-        
-        
+
+
       </div>
+
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 w-max mx-auto">
+        <div className="hover:bg-slate-800 h-0 w-48 sm:w-64 border border-slate-600 border-t-0 border-x-0">
+
+        </div>
+        <div className="hover:bg-slate-800 h-0 w-48 sm:w-64  border border-slate-600 border-t-0 border-r-0">
+        </div>
+        <div className="hover:bg-slate-800 h-0 w-48 sm:w-64  border border-slate-600 hidden md:block md:border-t-0 md:border-r-0">
+
+        </div>
+        <div className="hover:bg-slate-800 h-0 w-48 sm:w-64  border border-slate-600 hidden lg:block lg:border-t-0 lg:border-r-0">
+
+        </div>
+        <div className="hover:bg-slate-800 h-0 w-48 sm:w-64  border border-slate-600 hidden xl:block xl:border-t-0 xl:border-r-0">
+
+        </div>
+
+
+        <div className="hover:bg-slate-800 h-20 w-48 sm:w-64 sm:h-24 border border-slate-600 hidden lg:block lg:border-r-0 lg:border-y-0 xl:border-l-0">
+
+        </div>
+
+
+        <div className="hover:bg-slate-800 h-20 w-48 sm:w-64 sm:h-24 border border-slate-600 hidden lg:block lg:border-r-0 lg:border-y-0">
+
+        </div>
+        <div className="hover:bg-slate-800 h-20 w-48 sm:w-64 sm:h-24 border border-slate-600 hidden xl:block xl:border-r-0 xl:border-y-0">
+          <a
+            href="https://www.instagram.com/_dadaskitchen_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+            target="_blank"
+            rel="noopener noreferrer"
+            data-tooltip-id="coretalents-tooltip"
+            data-tooltip-place="top"
+          >
+            <img src={Coretalent} alt="Core Talents" className="max-h-24 object-contain mx-auto" />
+          </a>
+        </div>
+        <div className="hover:bg-slate-800 h-20 w-48 sm:w-64 sm:h-24 border border-slate-600 hidden xl:block xl:border-r-0 xl:border-y-0">
+
+        </div>
+        <div className="hover:bg-slate-800 h-20 w-48 sm:w-64 sm:h-24 border border-slate-600 border-y-0 border-r-0 lg:border-b-0">
+
+        </div>
+
+
+      </div>
+
+
 
       {/* Tooltips */}
       <Tooltip id="alamaanath-tooltip" className="z-50">
         <p>Building Dreams, Brick by Brick</p>
+      </Tooltip>
+      <Tooltip id="coretalents-tooltip" className="z-50">
+        <p>Smart hiring that builds strong teams</p>
       </Tooltip>
       <Tooltip id="academy-tooltip" className="z-50">
         <p>Empowering Minds, Shaping Futures</p>
@@ -196,6 +248,12 @@ const BrandMarquee = () => {
       url: "https://bmtechx.in/",
     },
     {
+      src: Coretalent,
+      alt: "Core Talents",
+      tooltip: "Smart hiring that builds strong teams",
+      url: "https://www.instagram.com/core_talents/?utm_source=ig_embed&ig_rid=2660117e-ab22-4c2e-8a8f-5816cd130ea5",
+    },
+    {
       src: Dada,
       alt: "Dada's Kitchen",
       tooltip: "Authentic Flavors, Memorable Meals",
@@ -223,7 +281,7 @@ const BrandMarquee = () => {
       src: Edu,
       alt: "Edu Consultants",
       tooltip: "Edu Consultants",
-      url: "",
+      url: "https://www.instagram.com/edu_consultant2013/?utm_source=ig_embed&ig_rid=84a4885c-30e0-4dcc-88c1-54bf38a4f627",
     },
   ];
 
